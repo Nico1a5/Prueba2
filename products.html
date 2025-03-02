@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestros Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="assets/images/sofa.jpg" alt="Sofá" loading="lazy">
+                <h3>Sofá Moderno</h3>
+                <p class="price">$500.00</p>
+                <p>Un sofá cómodo y elegante para tu sala.</p>
+                <button onclick="addToCart('Sofá Moderno', 500, 'Un sofá cómodo y elegante para tu sala.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Sofá Moderno', 500)">Comprar</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="assets/images/mesa.jpg" alt="Mesa de Centro" loading="lazy">
+                <h3>Mesa de Centro</h3>
+                <p class="price">$200.00</p>
+                <p>Mesa de centro de madera con diseño moderno.</p>
+                <button onclick="addToCart('Mesa de Centro', 200, 'Mesa de centro de madera con diseño moderno.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Mesa de Centro', 200)">Comprar</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="assets/images/silla.jpg" alt="Silla de Comedor" loading="lazy">
+                <h3>Silla de Comedor</h3>
+                <p class="price">$80.00</p>
+                <p>Silla ergonómica para tu comedor.</p>
+                <button onclick="addToCart('Silla de Comedor', 80, 'Silla ergonómica para tu comedor.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Silla de Comedor', 80)">Comprar</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="assets/images/lámpara.jpg" alt="Lámpara" loading="lazy">
+                <h3>Lámpara Moderna</h3>
+                <p class="price">$120.00</p>
+                <p>Lámpara de diseño moderno para iluminar tu espacio.</p>
+                <button onclick="addToCart('Lámpara Moderna', 120, 'Lámpara de diseño moderno para iluminar tu espacio.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Lámpara Moderna', 120)">Comprar</button>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="assets/images/almohada.jpg" alt="Almohada" loading="lazy">
+                <h3>Almohada Decorativa</h3>
+                <p class="price">$30.00</p>
+                <p>Almohada suave y cómoda para tu sofá.</p>
+                <button onclick="addToCart('Almohada Decorativa', 30, 'Almohada suave y cómoda para tu sofá.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Almohada Decorativa', 30)">Comprar</button>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product">
+                <img src="assets/images/estanteria.jpg" alt="Estantería" loading="lazy">
+                <h3>Estantería de Madera</h3>
+                <p class="price">$150.00</p>
+                <p>Estantería robusta y elegante para tus libros.</p>
+                <button onclick="addToCart('Estantería de Madera', 150, 'Estantería robusta y elegante para tus libros.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Estantería de Madera', 150)">Comprar</button>
+            </div>
+            <!-- Producto 7 -->
+            <div class="product">
+                <img src="assets/images/cortinas.jpg" alt="Cortinas" loading="lazy">
+                <h3>Cortinas Elegantes</h3>
+                <p class="price">$90.00</p>
+                <p>Cortinas suaves y elegantes para tu hogar.</p>
+                <button onclick="addToCart('Cortinas Elegantes', 90, 'Cortinas suaves y elegantes para tu hogar.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Cortinas Elegantes', 90)">Comprar</button>
+            </div>
+            <!-- Producto 8 -->
+            <div class="product">
+                <img src="assets/images/mesa_noche.jpg" alt="Mesa de Noche" loading="lazy">
+                <h3>Mesa de Noche</h3>
+                <p class="price">$70.00</p>
+                <p>Mesa de noche práctica y moderna.</p>
+                <button onclick="addToCart('Mesa de Noche', 70, 'Mesa de noche práctica y moderna.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Mesa de Noche', 70)">Comprar</button>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product">
+                <img src="assets/images/espejo.jpg" alt="Espejo" loading="lazy">
+                <h3>Espejo Decorativo</h3>
+                <p class="price">$60.00</p>
+                <p>Espejo elegante para decorar tu pared.</p>
+                <button onclick="addToCart('Espejo Decorativo', 60, 'Espejo elegante para decorar tu pared.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Espejo Decorativo', 60)">Comprar</button>
+            </div>
+            <!-- Producto 10 -->
+            <div class="product">
+                <img src="assets/images/alfombra.jpg" alt="Alfombra" loading="lazy">
+                <h3>Alfombra Moderna</h3>
+                <p class="price">$110.00</p>
+                <p>Alfombra suave y moderna para tu sala.</p>
+                <button onclick="addToCart('Alfombra Moderna', 110, 'Alfombra suave y moderna para tu sala.')">Añadir al carrito</button>
+                <button class="buy-now" onclick="buyNow('Alfombra Moderna', 110)">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Tienda en linea con Nicolas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
